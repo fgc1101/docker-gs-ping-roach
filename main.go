@@ -18,6 +18,8 @@ func main() {
 
 	e := echo.New()
 
+	fmt.Println("echo server started")
+
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 
